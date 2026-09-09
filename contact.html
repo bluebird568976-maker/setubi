@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="○○○○株式会社のお問い合わせサンプルページ。フォームは表示確認用で実際の送信は行いません。">
+  <title>お問い合わせ | ○○○○株式会社</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html"><img src="assets/logo.svg" alt="○○○○株式会社"></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">MENU</button>
+    <nav id="site-nav" class="site-nav" aria-label="メインナビゲーション"><a href="index.html">トップ</a><a href="about.html">会社概要</a><a href="service.html">サービス・事業内容</a><a href="contact.html" aria-current="page">お問い合わせ</a></nav>
+  </div>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container"><p class="eyebrow">CONTACT</p><h1>お問い合わせ</h1><p>このページでは、電話・メール・お問い合わせフォームをまとめ、相談先が分かりやすい構成にしています。</p></div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <aside class="contact-info">
+        <h2>お問い合わせ窓口</h2>
+        <p>以下はすべてサンプル用の架空情報です。実際の連絡先ではありません。</p>
+        <div class="contact-data">
+          <div><span>TEL</span><strong>06-0000-1190</strong></div>
+          <div><span>MAIL</span><strong>info@sample-fire.example</strong></div>
+          <div><span>AREA</span><strong>関西</strong></div>
+          <div><span>COMPANY</span><strong>○○○○株式会社</strong></div>
+        </div>
+      </aside>
+
+      <form class="contact-form" id="contact-form">
+        <p class="sample-note">このフォームはサンプル表示用です。入力しても実際の送信は行われません。</p>
+        <label>会社名・お名前
+          <input type="text" name="name" autocomplete="name" placeholder="例）株式会社○○ / 山田 太郎" required>
+        </label>
+        <label>メールアドレス
+          <input type="email" name="email" autocomplete="email" placeholder="例）info@example.com" required>
+        </label>
+        <label>電話番号
+          <input type="tel" name="tel" autocomplete="tel" placeholder="例）06-0000-0000">
+        </label>
+        <label>お問い合わせ種別
+          <input type="text" name="category" placeholder="例）点検について / 設備交換について">
+        </label>
+        <label>お問い合わせ内容
+          <textarea name="message" rows="8" placeholder="ご相談内容をご記入ください" required></textarea>
+        </label>
+        <button class="button button-primary" type="submit">送信内容を確認する →</button>
+        <p class="form-note">※サンプルのため送信処理・個人情報の保存は行いません。</p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-main"><a class="footer-logo" href="index.html"><img src="assets/logo.svg" alt="○○○○株式会社"></a><nav class="footer-nav" aria-label="フッターナビ"><a href="index.html">トップ</a><a href="about.html">会社概要</a><a href="service.html">サービス・事業内容</a><a href="contact.html">お問い合わせ</a></nav></div>
+    <div class="footer-bottom"><p>※本サイトは架空企業を使用したWeb制作サンプルです。</p><p>© ○○○○株式会社 SAMPLE</p></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
