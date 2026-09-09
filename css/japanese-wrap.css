@@ -1,0 +1,104 @@
+/* Japanese phrase-aware wrapping
+   Keep line breaks natural when the viewport width changes. */
+
+html[lang="ja"],
+body{
+  line-break:strict;
+  word-break:normal;
+  overflow-wrap:normal;
+  hyphens:none;
+}
+
+/* Use the browser's Japanese phrase analysis when available.
+   This avoids line endings moving one character at a time. */
+@supports (word-break:auto-phrase){
+  html[lang="ja"],
+  body{
+    word-break:auto-phrase;
+  }
+
+  p,
+  li,
+  dt,
+  dd,
+  label,
+  .section-lead,
+  .hero-text,
+  .page-hero p,
+  .service-line p,
+  .work-block p,
+  .message-block p,
+  .about-point p,
+  .form-note{
+    word-break:auto-phrase;
+    text-wrap:pretty;
+  }
+
+  h1,
+  h2,
+  h3,
+  .section-title{
+    word-break:auto-phrase;
+    text-wrap:balance;
+  }
+}
+
+/* Manual phrase wrappers can be used for important copy when a browser does
+   not support auto-phrase. Breaks occur only between phrase units. */
+.jp-flow{
+  line-break:strict;
+  overflow-wrap:normal;
+  hyphens:none;
+}
+
+@supports not (word-break:auto-phrase){
+  .jp-flow{
+    word-break:keep-all;
+  }
+
+  .jp-flow .jp-phrase{
+    display:inline-block;
+    max-width:100%;
+    white-space:nowrap;
+  }
+
+  .jp-flow wbr{
+    display:inline;
+  }
+}
+
+@supports (word-break:auto-phrase){
+  .jp-flow .jp-phrase{
+    display:inline;
+    max-width:none;
+    white-space:normal;
+  }
+
+  .jp-flow wbr{
+    display:none;
+  }
+}
+
+/* Do not let grid/flex children collapse into one-character columns. */
+.hero-sign,
+.service-line > *,
+.promise-inner > *,
+.message-block,
+.about-point,
+.company-row > *,
+.work-block > *,
+.contact-rail > *,
+.form-grid > *,
+.contact-cta-inner > *{
+  min-width:0;
+}
+
+@media(max-width:760px){
+  p,
+  li,
+  dt,
+  dd,
+  label{
+    max-width:100%;
+  }
+}
