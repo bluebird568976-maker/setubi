@@ -18,20 +18,20 @@
   <section class="page-hero"><div class="container page-hero-inner"><p class="breadcrumb">トップ / お問い合わせ</p><h1>お問い合わせ</h1><p>電話・メール・フォームの相談窓口をまとめたサンプルページです。</p></div></section>
 
   <section class="section"><div class="container">
-    <p class="sample-note">このページの連絡先とフォームはすべてサンプルです。実際の送信・受付・個人情報の保存は行いません。</p>
+    <p class="sample-note">このページの連絡先と入力欄はすべてサンプルです。実際の送信・受付・個人情報の保存は行いません。</p>
     <div class="contact-rail" style="margin-top:34px"><div><span>TEL / SAMPLE</span><strong>06-0000-1190</strong></div><div><span>MAIL / SAMPLE</span><strong>info@sample-fire.example</strong></div><div><span>AREA</span><strong>関西エリア</strong></div></div>
 
-    <form class="contact-form" id="contact-form">
+    <div class="contact-form" id="contact-form" role="form" aria-label="お問い合わせフォーム（サンプル）">
       <p class="kicker">相談フォーム</p>
       <div class="form-grid">
-        <label>会社名・お名前<input type="text" name="name" autocomplete="name" placeholder="例）株式会社○○ / 山田 太郎" required></label>
-        <label>メールアドレス<input type="email" name="email" autocomplete="email" placeholder="例）info@example.com" required></label>
-        <label>電話番号<input type="tel" name="tel" autocomplete="tel" placeholder="例）06-0000-0000"></label>
-        <label>お問い合わせ種別<input type="text" name="category" placeholder="例）点検について / 設備交換について"></label>
-        <label class="full">お問い合わせ内容<textarea name="message" rows="8" placeholder="ご相談内容をご記入ください" required></textarea></label>
+        <label>会社名・お名前<input type="text" autocomplete="off" placeholder="例）株式会社○○ / 山田 太郎"></label>
+        <label>メールアドレス<input type="email" autocomplete="off" placeholder="例）info@example.com"></label>
+        <label>電話番号<input type="tel" autocomplete="off" placeholder="例）06-0000-0000"></label>
+        <label>お問い合わせ種別<input type="text" autocomplete="off" placeholder="例）点検について / 設備交換について"></label>
+        <label class="full">お問い合わせ内容<textarea rows="8" autocomplete="off" placeholder="ご相談内容をご記入ください"></textarea></label>
       </div>
-      <div class="form-actions"><p class="form-note">※サンプルのため送信処理・個人情報の保存は行いません。</p><button class="button button-orange" type="submit">送信内容を確認する →</button></div>
-    </form>
+      <div class="form-actions"><p class="form-note">※入力内容は送信されません。実在する個人情報は入力しないでください。</p><button class="button button-orange" id="contact-demo-button" type="button">サンプル動作を確認する →</button></div>
+    </div>
   </div></section>
 </main>
 <footer class="site-footer"><div class="container"><div class="footer-main"><a class="footer-logo" href="index.html"><img src="assets/logo.svg" alt="○○○○株式会社"></a><nav class="footer-nav" aria-label="フッターナビ"><a href="index.html">トップ</a><a href="about.html">会社概要</a><a href="service.html">事業内容</a><a href="contact.html">お問い合わせ</a></nav></div><div class="footer-bottom"><p>※本サイトは架空企業を使用したWeb制作サンプルです。</p><p>© ○○○○株式会社 SAMPLE</p></div></div></footer>
