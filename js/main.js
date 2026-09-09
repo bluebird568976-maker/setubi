@@ -29,7 +29,6 @@ document.querySelectorAll('.site-nav a').forEach((link) => {
   });
 });
 
-document.querySelector('#contact-form')?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  alert('このフォームはサンプル表示用です。実際の送信は行われません。');
+document.querySelector('#contact-demo-button')?.addEventListener('click', () => {
+  alert('この入力欄はサンプル表示用です。入力内容は送信・保存されません。');
 });
