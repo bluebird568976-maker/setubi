@@ -1,8 +1,3 @@
-const japaneseWrapStylesheet = document.createElement('link');
-japaneseWrapStylesheet.rel = 'stylesheet';
-japaneseWrapStylesheet.href = 'css/japanese-wrap.css?v=20260909-1';
-document.head.appendChild(japaneseWrapStylesheet);
-
 const menuButton = document.querySelector('.menu-button');
 const siteNav = document.querySelector('.site-nav');
 const siteHeader = document.querySelector('.site-header');
